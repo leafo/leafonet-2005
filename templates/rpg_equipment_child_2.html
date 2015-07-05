@@ -1,0 +1,13 @@
+
+
+<!-- For Armors -->
+<div class="left m1-top" onmousedown="ttoggle('e{sid}');"><img src="resource/rpg/armor/{img}"></div>
+<div class="right p3 m3-top"><span class="elegant">{b_min} <i class="blugreen">defence</i></span>&nbsp;&nbsp;&nbsp;<a href="?act=rpg&amp;f={equip}item&amp;id={sid}">{equip}</a></div>
+<div class="selection m3-top"><div onmousedown="ttoggle('e{sid}');">{name}</div>
+	<div id="e{sid}" style="display: none;">
+		<div class="m3-bottom"><i>{description}</i></div>
+		<div class="right">Slot: {slot_name}</div>
+		<div>Detailed information</div>
+	</div>
+</div>
+<div class="clear"></div>

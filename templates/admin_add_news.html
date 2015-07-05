@@ -1,0 +1,19 @@
+
+<form enctype="multipart/form-data" method="POST" name="news" action="?act=admin&amp;f=doaddnews">
+
+<h2 class="m3-top p3 elegant">
+<input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
+<div class="right">Category: <select name="cat" class="input">{cats}</select></div>
+<div>Title: <input type="text" class="input w300" name="title" maxlength="50"></div>
+<div style="background-color: #ECF5E1;" class="border p3 center m3-top"> 
+	<input type="radio" name="cat_image" value="0"> Upload Image <input name="image" type="file"/>
+	&nbsp;<input type="radio" name="cat_image" value="1" checked> Use Default Image
+	&nbsp;<input type="radio" name="cat_image" value="2"> Use No Image
+</div>
+</h2>
+
+<center>
+<textarea name="text" class="input m3-top" style="width: 555px; height: 400px;"></textarea>
+</cetner>
+<h2 class="p3 elegant m3-top" style="line-height: 150%;"><input type="submit" /></h2>
+</form>

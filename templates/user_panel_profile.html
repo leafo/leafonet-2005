@@ -1,0 +1,54 @@
+
+<form action="?act=user&amp;f=SubmitProfile" method="POST" name="form">
+
+		
+<h2 class="p5 m3-bottom">Edit Profile</h2>
+<blockquote>Values you fill into your profile are visible to anyone unless noted.</blockquote>
+<table class="pt">
+	<tr>
+		<td class="ptt">User title</td>
+		<td><input type="text" class="input" name="title" maxlength="12" value="{user.title}"></td>
+	</tr>
+	<tr>
+		<td class="ptt">Birthdate</td>
+		<td>
+			<select name="dob_month" class="input">
+				{months}
+			</select>
+			<select name="dob_day" class="input">
+				{days}
+			</select>
+			<input type="text" class="input" name="dob_year" maxlength="4" style="width: 60px; height: 15px;" value="{user.dob_year}">
+		</td>
+	</tr>
+	<tr>
+		<td class="ptt">Website</td>
+		<td><input type="text" class="input w200" name="prof_website" value="{user.prof_website}"></td>
+	</tr>
+	<tr>
+		<td class="ptt">Location</td>
+		<td><input type="text" class="input w200" name="prof_location" value="{user.prof_location}"></td>
+	</tr>
+	<tr>
+		<td class="ptt">AIM ident</td>
+		<td><input type="text" class="input" name="prof_aim" value="{user.prof_aim}"></td>
+	</tr>
+	<tr>
+		<td class="ptt">MSN ident</td>
+		<td><input type="text" class="input" name="prof_msn" value="{user.prof_msn}"></td>
+	</tr>
+	<tr>
+		<td class="ptt">Interests</td>
+		<td><input type="text" class="input w300" name="prof_interests" value="{user.prof_interests}"></td>
+	</tr>
+</table>
+
+<div class="center">
+
+	<div class="shade m3-top center">
+		<input type="submit" name="submit" value="Submit"/>
+		<input type="reset" name="reset" value="Reset" />
+	</div>
+
+</div>
+</form>

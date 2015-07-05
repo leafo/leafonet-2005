@@ -1,0 +1,17 @@
+<form action="?act=user&f=DoRegister" method="POST" name="reg" onsubmit="return check()">
+	<h1>Create an account - <b>All fields required.</b></h1>
+	<div class="shade2 p3">Username</div>
+		<div><input type="text" name="user" class="input m3-top m3-bottom"/>&nbsp;&nbsp;3 to 20 characters.</div>
+	<div class="shade2 p3">Password and its verification</div>
+		<div><input type="password" name="pass" class="input m3-top m3-bottom"/>&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="passc" class="input  m3-top m3-bottom"/></div>
+	<div class="shade2 p3">Email</div>
+		<div><input type="text" name="email" class="input m3-top m3-bottom"/>&nbsp;&nbsp;Valid emails accepted only.</div>
+	<div class="shade2 p3">Sex</div>
+		<div><select name="sex" class="input m3-top"><option>Male</option><option>Female</option></select></div>
+
+	<div class="border center m3-top p1">
+		<input type="submit" name="submit" value="Submit" class="m1"/>
+		<input type="reset" name="reset" value="Reset" class="m1"/>
+		<div class="shade_bar" style="font-size: .9em;">Upon registration you agree to all terms stated.</div>
+	</div>
+</form>

@@ -1,0 +1,48 @@
+html { height: 100%}
+body {
+	font-family: verdana, serif;
+	font-size: 11px;
+	height: inherit;
+	text-align: center;
+	background-color: #F9F9F9;
+	margin: 0px;
+	background-image: url("layout_1_02.jpg");
+	background-repeat: repeat-y;
+	background-position: 50% 0%;
+}
+
+
+#content {	
+	height: inherit;
+	width: 802px;
+}
+
+#topnav {
+	background-image: url("layout_2_01_01.jpg");
+	text-align: right;
+	height: 19px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+#topnav a {
+	text-decoration: none;
+	color: black;
+	margin-left: 10px;
+	padding: 3px;
+	padding-top: 10px;
+	
+}
+
+#topnav a:hover {
+	background-position: top left;
+	background-repeat: repeat-x;
+	background-image: url("fade.jpg");
+	text-decoration: underline;
+}
+
+#cell {
+	padding: 10px;
+	padding-top: 0px;
+	text-align: left;
+}

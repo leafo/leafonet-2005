@@ -1,0 +1,34 @@
+<table width="100%" cellspacing="4" cellpading="2" style="background-color: #FFFFFF;">
+	<tr valign="top">
+		<td width="120" style="background-color: #ECF5E1;"><a name="{qid}">
+			<div style="background-image: url('rpgjobs/{file}_{sex}.gif'); background-repeat: no-repeat; background-position: bottom right;">
+				<a href="?act=user&amp;f=profile&amp;i={id}"><h5>{name}</h5></a>
+				<i>{title}</i><br />
+				{avatar}
+				<div style="font-size: 10px;">
+					Member No: {id}<br />
+					Posts: {postcount}<br />
+					Money: {money}<br />
+					Level {level} {jname}
+				</div>
+			</div>
+		</td>
+		<td id="border">
+			<div class="shade_bar">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+					<td>Posted on {date}</td>
+					<td style="text-align: right;">
+						{delete}
+						<a href="?act=forum&amp;f=EditPost&amp;p={qid}" style="display:{display};"><img src="templates/images/button_edit.gif" alt="Edit"></a>
+						<a href="?act=forum&amp;f=NewQuote&amp;p={pid}&amp;q={qid}"><img src="templates/images/button_quote.gif" alt="Quote"></a>
+				</tr>
+			</table>
+			</div>
+			<div style="padding: 3px;">
+				{post}
+				{signature}
+			</div>
+		</td>
+    </tr>
+</table>

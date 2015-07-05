@@ -1,0 +1,27 @@
+
+<form action="?act=user&amp;f=SubmitSignature" method="POST" name="form">
+		<script>
+			//thx to losl for stealz
+			function insert(text) {
+			if (document.form.textarea.createTextRange && document.form.textarea.caretPos) {
+				var caretPos = document.form.textarea.caretPos;
+				caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ?
+				text + ' ' : text;
+			}
+				else document.form.textarea.value += text;
+					document.form.textarea.focus(caretPos)
+			}
+		</script>
+		
+<h2 class="p5 m3-bottom">Current Signature</h2>
+<blockquote>Your signature is attached to the bottom of every on of your posts. Signatures support forum tags and images.</blockquote>
+<div class="center">
+
+	<textarea name="textarea" class="input" style="width: 459px; height: 200px;">{signature}</textarea>
+	<div class="shade m3-top center">
+		<input type="submit" name="submit" value="Submit"/>
+		<input type="reset" name="reset" value="Reset" />
+	</div>
+
+</div>
+</form>

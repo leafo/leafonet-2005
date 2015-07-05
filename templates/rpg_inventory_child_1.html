@@ -1,0 +1,9 @@
+
+<div class="left m1-top" onmousedown="toggle('i{sid}');"><img src="resource/rpg/items/{img}"></div>
+<div class="right p3 m3-top"  onmousedown="toggle('i{sid}');">Quantity: {quantity}</div>
+<div class="selection m3-top"><div onmousedown="toggle('i{sid}');">{name}</div>
+	<div id="i{sid}" style="display: none;"><i>{description}</i>
+	<div class="m3-top">Value: <span class="gold">{value}</span> Quality: <span class="qual_{quality}">{quality}</span></div>
+	<div class="m3-top"><a href="?act=rpg&amp;f=useitem&amp;id={sid}">Use</a> &#183; <a href="#">Discard</a> &#183; <a href="#">Sell</a></div></div>
+</div>
+<div class="clear"></div>

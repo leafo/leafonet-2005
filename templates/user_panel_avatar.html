@@ -1,0 +1,25 @@
+<form method="POST" action="?act=user&amp;f=SubmitAvatar">
+
+<h2>Current Avatar</h2>
+<div class="left" style="padding: 8px 5px 0px 3px;"><img src="{avatar}"></div>
+<div class="p3">An avatar is a pictoral representation of you on the forums. 
+They are displayed next to your name every time you make a post. 
+An avatar can be of anything with certain moderation, only 
+limitation is that it is the correct format and of the size
+<b>{av_x}x{av_y}</b> or less.</div>
+<div><input type="radio" name="avatar" value="0"{c1}>Don't use avatar/Delete existing avatar</div><br />
+<h2>Custom Avatar</h2>
+<div class="p3">Below you can load an avatar from a remote location via its url. Romote avatars must be of 
+file types .jpg, .gif, or .png and they may not exceed the size of <b>{av_x}x{av_y}</b>.</div>
+<div>
+<input type="radio" name="avatar" value="1"{c2}>Use a custom avatar from a remote location<br />
+<input type="text" class="input w400" style="margin-left: 30px;" name="av_url" value="{av_text}">
+</div><br />
+<h2>Upload a custom avatar</h2>
+<div class="p3">If you do not have a location to upload your custom avatar then you may upload it here for displaying purposes only.
+<br />
+Avatar Uploading is currently <b>Disabled</b><br/></div>
+<h2>Submit Changes</h2>
+<div class="center"><input type="submit" value="Submit" class="m3">
+<input type="reset" value="Reset" class="m3"></div>
+</form>

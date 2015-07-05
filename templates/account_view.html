@@ -1,0 +1,35 @@
+  <script language="javascript" type="text/javascript">
+  // <!--
+	function check() {
+		pass1 = document.reg.pass.value;
+		pass2= document.reg.passc.value;
+		user = document.reg.user.value;
+		email = document.reg.email.value;
+	if (pass1 == pass2 && pass1 != "" && pass2 != "" && user !="" && email !="")  {
+		if (email.match(/[a-zA-Z0-9-_.]+@[a-zA-Z0-9-_]+.[a-zA-Z0-9-_.]+/)) {
+			document.reg.submit.disabled=true;
+			return true;
+		}
+			alert("Please use a valid email. Thank you.");
+			return false;
+	} else {
+	 	alert("Please take the time to fill out this form correctly. Thank you..");
+		return false;
+	}
+  }
+  // -->
+  </script>
+
+<table cellspacing="4" id="border">
+	<caption style="padding: 3px;">Account Managment</caption>
+	<tr valign="top">
+		<td>
+			{content}
+		</td>
+		<td id="border" width=400>
+			<div id="block1_top"><b>Rules</b></div>
+			<div id="block1_cell">Accounts <b>are</b> a privilage.<br>The administrator and staff can not be held responsible for the content of this site contributed by outside members or groups. Mesages represent views of authors and not the views of this site and message board. Please refrain for any racial slurs and do not partake in illegal activites. If there is a problem you wish to resolve you may contact your adminsitrator, leafo, via email: leaf@leafo.net.  <br><br> During your visit at leafo.net please try to treat others with respect. Tollerate other opinions and refrain from getting involved in needless arguments. But constructive arguments or discussions are a good way to express your opinion in a non violent manor. Please refrain from posting useless mesages known as spam. Use only english, and try to use proper english, with your yous and ares spelled out. If you can follow these simple rules I can ensure your enjoyment at leafo.net </div>
+		</td>
+	</tr>
+</table>
+

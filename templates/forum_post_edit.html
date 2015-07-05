@@ -1,0 +1,44 @@
+<form action="?act=forum&amp;f=DoEdit&amp;p={id}&amp;t={parent}" method="POST" name="forum">
+	<script>
+		//thx to losl for stealz
+		function insert(text) {
+		if (document.forum.textarea.createTextRange && document.forum.textarea.caretPos) {
+			var caretPos = document.forum.textarea.caretPos;
+			caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ?
+			text + ' ' : text;
+		}
+		else document.forum.textarea.value += text;
+		document.forum.textarea.focus(caretPos)
+		}
+	</script>
+
+
+
+
+<div id="border" style="padding: 3px; margin-bottom: 3px;">
+	<h1 class="m3-bottom">Editing post</b></h1>
+	<div class="right w300 m1-top">
+		
+		<div class="border_padded">
+			<div class="button2">
+			<img src="templates/images/ticks.gif" alt=""><a href="Javascript:insert('[b][/b]');"><img src="resource/icons/bold.gif" alt="B"/></a><a href="Javascript:insert('[i][/i]');"><img src="resource/icons/italic.gif" alt="I"/></a><a href="Javascript:insert('[u][/u]');"><img src="resource/icons/underline.gif" alt="IMG"/></a><a href="Javascript:insert('[s][/s]');"><img src="resource/icons/strike.gif" alt="S"/></a><a href="Javascript:insert('[img][/img]');"><img src="resource/icons/image.gif" alt="IMG"/></a><a href="Javascript:insert('[url][/url]');"><img src="resource/icons/hyperlink.gif" alt="URL"/></a><a href="Javascript:insert('[quote][/quote]');"><img src="resource/icons/quote.gif" alt="QUOTE"/></a><a href="Javascript:insert('[code][/code]');"><img src="resource/icons/code.gif" alt="CODE"/></a>
+			</div>
+		</div>
+		
+		<div class="border_padded m2-top">
+			<div class="shade2 p3 m2-bottom">Clickable Emoticons</div>
+			<div class="center">{emotes}</div>
+		</div>
+	
+	</div>
+	<div>
+		<textarea name="textarea" class="input" style="width: 468px; height: 200px;">{post}</textarea>
+		<div class="shade m3-top center">
+			<input type="submit" name="submit" value="Submit"/>
+			<input type="reset" name="reset" value="Reset" />
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+</form>
